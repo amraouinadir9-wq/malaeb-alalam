@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ملاعب العالم</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0b1220;
+      color: white;
+      line-height: 1.8;
+    }
+
+    header {
+      background: #101b30;
+      padding: 25px 15px;
+      text-align: center;
+      border-bottom: 2px solid #1687ff;
+    }
+
+    header h1 {
+      color: #1687ff;
+      font-size: 32px;
+    }
+
+    header p {
+      color: #ddd;
+      margin-top: 5px;
+    }
+
+    nav {
+      background: #16233b;
+      padding: 12px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 8px;
+      display: inline-block;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #1687ff;
+    }
+
+    .hero {
+      padding: 55px 20px;
+      text-align: center;
+      background: linear-gradient(135deg, #10284a, #0b1220);
+    }
+
+    .hero h2 {
+      font-size: 30px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      color: #ddd;
+      font-size: 18px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 30px 15px;
+    }
+
+    .section-title {
+      color: #1687ff;
+      margin-bottom: 20px;
+      border-right: 4px solid #1687ff;
+      padding-right: 10px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #142039;
+      padding: 20px;
+      border-radius: 12px;
+      border: 1px solid #263858;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #1687ff;
+    }
+
+    .card h3 {
+      color: #1687ff;
+      margin-bottom: 10px;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 18px;
+      background: #1687ff;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+
+    footer {
+      margin-top: 40px;
+      padding: 25px;
+      text-align: center;
+      background: #101b30;
+      color: #bbb;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>⚽ ملاعب العالم</h1>
+    <p>كل أخبار كرة القدم في مكان واحد</p>
+  </header>
+
+  <nav>
+    <a href="#">الرئيسية</a>
+    <a href="#">مباريات اليوم</a>
+    <a href="#">آخر الأخبار</a>
+    <a href="#">التحليلات</a>
+    <a href="#">ملاعب عالمية</a>
+    <a href="#">الانتقالات</a>
+  </nav>
+
+  <section class="hero">
+    <h2>مرحباً بكم في ملاعب العالم</h2>
+    <p>منصة رياضية عربية لعشاق كرة القدم حول العالم 🌍</p>
+  </section>
+
+  <main class="container">
+
+    <h2 class="section-title">🔥 أحدث الأخبار</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <h3>⚽ مباريات اليوم</h3>
+        <p>تابع أهم مباريات اليوم ونتائجها وتحليلها.</p>
+        <a class="button" href="#">اقرأ المزيد</a>
+      </div>
+
+      <div class="card">
+        <h3>📊 تحليلات المباريات</h3>
+        <p>تحليلات وملخصات لأبرز المواجهات الكروية.</p>
+        <a class="button" href="#">اقرأ المزيد</a>
+      </div>
+
+      <div class="card">
+        <h3>🏟️ ملاعب عالمية</h3>
+        <p>اكتشف أشهر الملاعب وقصصها وأهم الأحداث التي شهدتها.</p>
+        <a class="button" href="#">اكتشف الآن</a>
+      </div>
+
+      <div class="card">
+        <h3>🔄 أخبار الانتقالات</h3>
+        <p>آخر أخبار انتقالات اللاعبين وأبرز الصفقات.</p>
+        <a class="button" href="#">آخر الأخبار</a>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer>
+    <p>© 2026 ملاعب العالم - جميع الحقوق محفوظة</p>
+  </footer>
+
+</body>
+</html>
