@@ -1,185 +1,201 @@
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ملاعب العالم</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ملاعب العالم الرياضية</title>
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+<style>
+body{
+margin:0;
+font-family:Arial,Tahoma,sans-serif;
+background:#f4f6f8;
+color:#222;
+}
 
-    body {
-      font-family: Arial, sans-serif;
-      background: #0b1220;
-      color: white;
-      line-height: 1.8;
-    }
+header{
+background:linear-gradient(135deg,#071d2b,#087f5b);
+color:white;
+text-align:center;
+padding:40px 15px;
+}
 
-    header {
-      background: #111c33;
-      padding: 20px;
-      text-align: center;
-      border-bottom: 2px solid #1e90ff;
-    }
+header h1{
+margin:0;
+font-size:34px;
+}
 
-    header h1 {
-      color: #1e90ff;
-      font-size: 32px;
-    }
+header p{
+font-size:18px;
+}
 
-    header p {
-      color: #ddd;
-      margin-top: 5px;
-    }
+nav{
+background:white;
+padding:16px;
+text-align:center;
+box-shadow:0 2px 8px #ccc;
+}
 
-    nav {
-      background: #16233d;
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-      padding: 12px;
-      flex-wrap: wrap;
-    }
+nav a{
+color:#087f5b;
+text-decoration:none;
+margin:0 8px;
+font-weight:bold;
+}
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      padding: 8px 15px;
-      border-radius: 8px;
-    }
+.hero{
+background:white;
+text-align:center;
+padding:45px 20px;
+}
 
-    nav a:hover {
-      background: #1e90ff;
-    }
+.hero h2{
+color:#071d2b;
+font-size:28px;
+}
 
-    .hero {
-      text-align: center;
-      padding: 50px 20px;
-      background: linear-gradient(135deg, #0b1220, #162f55);
-    }
+.hero p{
+font-size:18px;
+line-height:1.8;
+}
 
-    .hero h2 {
-      font-size: 30px;
-      margin-bottom: 15px;
-    }
+.container{
+max-width:1000px;
+margin:auto;
+padding:25px 15px;
+}
 
-    .hero p {
-      color: #ddd;
-      font-size: 18px;
-    }
+.title{
+text-align:center;
+color:#087f5b;
+margin:30px 0 20px;
+}
 
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 30px 20px;
-    }
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+gap:20px;
+}
 
-    .section-title {
-      text-align: center;
-      color: #1e90ff;
-      margin-bottom: 25px;
-      font-size: 28px;
-    }
+.card{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 3px 12px #ddd;
+text-align:center;
+}
 
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
+.card h3{
+color:#071d2b;
+}
 
-    .card {
-      background: #16233d;
-      padding: 25px;
-      border-radius: 15px;
-      text-align: center;
-      border: 1px solid #263b5e;
-    }
+.card p{
+line-height:1.8;
+}
 
-    .card h3 {
-      color: #1e90ff;
-      margin-bottom: 10px;
-    }
+.button{
+display:inline-block;
+background:#087f5b;
+color:white;
+padding:12px 22px;
+border-radius:8px;
+text-decoration:none;
+margin-top:10px;
+}
 
-    .card p {
-      color: #ddd;
-    }
-
-    .button {
-      display: inline-block;
-      margin-top: 15px;
-      background: #1e90ff;
-      color: white;
-      padding: 10px 20px;
-      border-radius: 8px;
-      text-decoration: none;
-    }
-
-    footer {
-      margin-top: 40px;
-      padding: 25px;
-      text-align: center;
-      background: #111c33;
-      color: #bbb;
-    }
-  </style>
+footer{
+background:#071d2b;
+color:white;
+text-align:center;
+padding:25px;
+margin-top:30px;
+}
+</style>
 </head>
 
 <body>
 
-  <header>
-    <h1>⚽ ملاعب العالم</h1>
-    <p>كل أخبار كرة القدم في مكان واحد</p>
-  </header>
+<header>
+<h1>⚽ ملاعب العالم</h1>
+<p>بوابتك إلى عالم كرة القدم والرياضة</p>
+</header>
 
-  <nav>
-    <a href="#">الرئيسية</a>
-    <a href="#">أخبار كرة القدم</a>
-    <a href="#">نتائج المباريات</a>
-    <a href="#">التحليلات</a>
-    <a href="#">الملاعب</a>
-  </nav>
+<nav>
+<a href="#home">الرئيسية</a>
+<a href="#news">الأخبار</a>
+<a href="#matches">المباريات</a>
+<a href="#about">من نحن</a>
+</nav>
 
-  <section class="hero">
-    <h2>مرحباً بكم في ملاعب العالم 🌍</h2>
-    <p>منصة رياضية تهتم بأخبار المباريات والنتائج والتحليلات وأشهر الملاعب العالمية.</p>
-  </section>
+<section class="hero" id="home">
+<h2>مرحبًا بكم في ملاعب العالم</h2>
+<p>
+أخبار كرة القدم، نتائج المباريات، التحليلات والتقارير الرياضية
+من مختلف الملاعب حول العالم.
+</p>
+<a class="button" href="#matches">آخر المباريات</a>
+</section>
 
-  <main class="container">
+<div class="container">
 
-    <h2 class="section-title">أحدث الأخبار</h2>
+<h2 class="title" id="news">📰 آخر الأخبار الرياضية</h2>
 
-    <div class="cards">
+<div class="cards">
 
-      <div class="card">
-        <h3>⚽ أخبار المباريات</h3>
-        <p>تابع أهم أخبار ونتائج مباريات كرة القدم حول العالم.</p>
-        <a href="#" class="button">اقرأ المزيد</a>
-      </div>
+<div class="card">
+<h3>⚽ أخبار كرة القدم</h3>
+<p>تابع أبرز الأخبار والتطورات في عالم كرة القدم.</p>
+</div>
 
-      <div class="card">
-        <h3>📊 التحليلات</h3>
-        <p>تحليلات رياضية مختصرة ومميزة لأبرز المباريات.</p>
-        <a href="#" class="button">شاهد التحليل</a>
-      </div>
+<div class="card">
+<h3>🔥 تحليلات المباريات</h3>
+<p>تحليلات مبسطة لأهم المباريات وأداء الفرق واللاعبين.</p>
+</div>
 
-      <div class="card">
-        <h3>🏟️ أشهر الملاعب</h3>
-        <p>اكتشف أشهر ملاعب كرة القدم وقصصها وتاريخها.</p>
-        <a href="#" class="button">اكتشف الملاعب</a>
-      </div>
+<div class="card">
+<h3>🏆 البطولات العالمية</h3>
+<p>تغطية لأبرز البطولات والدوريات الأوروبية والعربية.</p>
+</div>
 
-    </div>
+</div>
 
-  </main>
+<h2 class="title" id="matches">📅 المباريات والنتائج</h2>
 
-  <footer>
-    <p>© 2026 ملاعب العالم - جميع الحقوق محفوظة</p>
-  </footer>
+<div class="cards">
+
+<div class="card">
+<h3>مباريات اليوم</h3>
+<p>تعرف على أهم المباريات والنتائج والتحليلات.</p>
+</div>
+
+<div class="card">
+<h3>حصاد المباريات</h3>
+<p>ملخص سريع لأبرز أحداث مباريات اليوم.</p>
+</div>
+
+<div class="card">
+<h3>النتائج</h3>
+<p>نتائج المباريات وأبرز الأرقام والإحصائيات.</p>
+</div>
+
+</div>
+
+<h2 class="title" id="about">🌍 من نحن</h2>
+
+<div class="card">
+<p>
+<strong>ملاعب العالم الرياضية</strong>
+موقع رياضي يهتم بأخبار كرة القدم والنتائج والتحليلات
+والتقارير الرياضية من مختلف أنحاء العالم.
+</p>
+</div>
+
+</div>
+
+<footer>
+<p>© 2026 ملاعب العالم الرياضية</p>
+<p>⚽ الرياضة تجمعنا</p>
+</footer>
 
 </body>
 </html>
